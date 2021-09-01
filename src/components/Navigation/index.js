@@ -2,6 +2,7 @@ import { useState } from "react";
 import StyledNav from "./style";
 import Mobile from "./Mobile";
 import { Link } from "react-scroll";
+import Logo from "../../assets/Logo.svg";
 
 const Nav = (props) => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -41,10 +42,10 @@ const Nav = (props) => {
 
   return (
     <StyledNav props={{ navStyles }}>
-      <div className="logo-wrapper">
-        <img src="/icon_logo.png" alt="CloudFood's Logo" />
-      </div>
       <nav className="desktop-nav">
+        <div className="logo-wrapper">
+          <img src={Logo} alt="Yougo's Logo" />
+        </div>
         <span>
           <Link
             activeClass="active"
@@ -94,6 +95,10 @@ const Nav = (props) => {
           </Link>
         </span>
       </nav>
+      {/* <div className="stores">
+        <img src="/playstore.png" alt="playstore" />
+        <img src="/appstore.png" alt="appstore" />
+      </div> */}
       <div className="menu" onClick={toggleNav}>
         <div className="menu-icon">&nbsp;</div>
       </div>

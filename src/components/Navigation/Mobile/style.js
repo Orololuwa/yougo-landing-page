@@ -4,8 +4,8 @@ import { blue, white, typeScale } from "theme";
 const StyledMobile = styled.div`
   width: 100%;
   height: 25rem;
-  background-color: ${blue[100]};
-  color: ${white[100]};
+  background-color: ${white[100]};
+  color: ${blue[100]};
   position: absolute;
   top: 100%;
   left: 0;

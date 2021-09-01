@@ -5,6 +5,10 @@ export const white = {
   400: "#828282"
 };
 
+export const grey = {
+  100: "#18191F"
+};
+
 export const black = {
   100: "#030303",
   200: "#121212",
@@ -20,8 +24,8 @@ export const yellow = {
   100: "#FECE00"
 };
 
-export const brown = {
-  100: "#BB4F07"
+export const purple = {
+  100: "#8C30F5"
 };
 
 export const orange = {

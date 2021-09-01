@@ -1,11 +1,12 @@
 import styled from "styled-components";
-import { blue, white } from "theme";
+import { white, grey } from "theme";
 
 const Nav = styled.div`
-  background-color: ${blue[100]};
-  color: ${white[100]};
+  background-color: ${white[100]};
+  color: ${grey[100]};
   display: flex;
-  padding: 1rem 5rem;
+  justify-content: space-between;
+  padding: 2rem 10rem;
   position: fixed;
   width: 100%;
   top: 0;
@@ -14,16 +15,42 @@ const Nav = styled.div`
 
   .logo-wrapper {
     z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2.5rem;
 
     img {
-      height: 2.5rem;
+      height: 1.5rem;
       object-fit: cover;
       z-index: 200;
     }
   }
 
+  .stores {
+    display: none;
+    img {
+      width: 7.5rem;
+      height: 2.5rem;
+      cursor: pointer;
+      transition: all 0.5s;
+      margin-right: 0.5rem;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    @media only screen and (min-width: 750px) {
+      display: block;
+    }
+  }
+
   .desktop-nav {
-    padding: 0 5rem;
+    //padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     span {
       padding: 0 1rem;
@@ -40,7 +67,7 @@ const Nav = styled.div`
         right: 0;
         width: 0;
         height: 2px;
-        background-color: #fff;
+        background-color: ${grey[100]};
         transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
       }
 
@@ -89,7 +116,7 @@ const Nav = styled.div`
         content: "";
         position: absolute;
         left: 0;
-        background-color: ${white[100]};
+        background-color: ${grey[100]};
         transition: all 0.2s;
       }
 
@@ -103,7 +130,7 @@ const Nav = styled.div`
       }
 
       background-color: ${({ props }) =>
-        props.navStyles.bgColor(white[100])} !important;
+        props.navStyles.bgColor(grey[100])} !important;
     }
 
     @media only screen and (min-width: 750px) {

@@ -31,6 +31,10 @@ const StyledButton = styled.button`
     opacity: 1;
     right: 10px;
   }
+
+  @media only screen and (max-width: 750px) {
+    margin: 2.5rem 0;
+  }
 `;
 
 export default StyledButton;

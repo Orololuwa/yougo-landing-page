@@ -1,20 +1,21 @@
 import styled from "styled-components";
-import { blue, white } from "theme";
+import { white, grey } from "theme";
 
 const StyledHeader = styled.header`
-  height: 80vh;
+  height: 100vh;
   width: 100%;
-  background-color: ${blue[100]};
-  color: ${white[100]};
+  background-color: ${white[100]};
+  color: ${grey[100]};
   position: relative;
   overflow: hidden;
 
   .header {
-    padding: 5rem;
+    padding: 10rem;
     display: flex;
+    height: 100%;
 
     &-texts {
-      width: 40%;
+      width: 60%;
 
       .stores {
         img {
@@ -28,6 +29,13 @@ const StyledHeader = styled.header`
             transform: scale(1.05);
           }
         }
+
+        @media only screen and (min-width: 750px) {
+          position: absolute;
+          top: 1.5rem;
+          right: 10rem;
+          z-index: 250;
+        }
       }
     }
 
@@ -35,14 +43,14 @@ const StyledHeader = styled.header`
       padding-top: 5rem;
 
       img {
-        width: 30rem;
-        object-fit: cover;
+        width: 18rem;
+        object-fit: contain;
         position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 250;
+        top: 7.5rem;
+        right: 10rem;
+        //z-index: 250;
         display: block;
-        transform: rotate(-35deg) translateY(5rem);
+        //transform: rotate(-35deg) translateY(5rem);
 
         @media only screen and (max-width: 750px) {
           position: unset;
@@ -54,6 +62,7 @@ const StyledHeader = styled.header`
     @media only screen and (max-width: 750px) {
       flex-direction: column;
       align-items: center;
+      padding: 5rem;
 
       &-texts {
         width: 100%;
