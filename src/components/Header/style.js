@@ -8,6 +8,8 @@ const StyledHeader = styled.header`
   color: ${grey[100]};
   position: relative;
   overflow: hidden;
+  background: url(Background.svg) no-repeat;
+  background-size: cover;
 
   .header {
     padding: 10rem;

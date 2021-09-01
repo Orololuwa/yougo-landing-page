@@ -8,7 +8,7 @@ const Mobile = (props) => {
         visibility: "visible"
       }
     : {
-        translate: "0",
+        translate: "-20%",
         visibility: "hidden"
       };
 

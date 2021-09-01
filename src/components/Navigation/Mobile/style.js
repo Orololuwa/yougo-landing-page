@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import { blue, white, typeScale } from "theme";
+import { grey, white, typeScale } from "theme";
 
 const StyledMobile = styled.div`
   width: 100%;
   height: 25rem;
-  background-color: ${white[100]};
-  color: ${blue[100]};
+  color: ${grey[100]};
   position: absolute;
   top: 100%;
   left: 0;
@@ -50,6 +49,10 @@ const StyledMobile = styled.div`
         }
       }
     }
+  }
+
+  @media only screen and (max-width: 750px) {
+    background-color: ${white[100]};
   }
 `;
 

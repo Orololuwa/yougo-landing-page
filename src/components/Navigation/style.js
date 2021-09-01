@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { white, grey } from "theme";
 
 const Nav = styled.div`
-  background-color: ${white[100]};
+  //background-color: ${white[100]};
   color: ${grey[100]};
   display: flex;
   justify-content: space-between;
