@@ -13,12 +13,36 @@ const Features = (props) => {
       </div>
       <div className="features-content">
         <div className="features-content--text">
-          <Card src="01.png" />
-          <Card src="02.png" />
-          <Card src="03.png" />
-          <Card src="04.png" />
-          <Card src="05.png" />
-          <Card src="06.png" />
+          <Card
+            src="01.png"
+            title="Robust Workflow"
+            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          />
+          <Card
+            src="02.png"
+            title="Flexibility"
+            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          />
+          <Card
+            src="03.png"
+            title="User friendly"
+            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          />
+          <Card
+            src="04.png"
+            title="Multiple layouts"
+            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          />
+          <Card
+            src="05.png"
+            title="Better components"
+            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          />
+          <Card
+            src="06.png"
+            title="Well Organised"
+            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          />
         </div>
         {/* <div className="features-content--image composition">
           <img
