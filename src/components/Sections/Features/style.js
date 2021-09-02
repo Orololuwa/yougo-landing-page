@@ -26,12 +26,17 @@ const StyledFeatures = styled.section`
         font-size: ${typeScale.header2};
         font-weight: 600;
         text-transform: Capitalize;
+        line-height: 3rem;
       }
 
       &--subheader {
         width: 35rem;
         font-size: ${typeScale.bodyText3};
         font-weight: 400;
+
+        @media only screen and (max-width: 600px) {
+          width: 25rem;
+        }
       }
     }
 
