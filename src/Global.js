@@ -46,7 +46,7 @@ const GlobalStyles = createGlobalStyle`
         width: 100%;
         height: 100vh;
         background-color: ${white[100]};
-        color: ${black[300]};
+        color: ${black[200]};
         line-height: 2.1rem;
         font-style: normal;
         font-weight: 400;

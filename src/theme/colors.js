@@ -17,7 +17,7 @@ export const black = {
 
 export const blue = {
   100: "#0DA4DB",
-  200: "#0D85AA"
+  200: "#D5FAFC"
 };
 
 export const yellow = {

@@ -1,5 +1,5 @@
-const { default: Card } = require("./Card");
-const { default: StyledFeatures } = require("./style");
+import Card from "./Card";
+import StyledFeatures from "./style";
 
 const Features = (props) => {
   return (

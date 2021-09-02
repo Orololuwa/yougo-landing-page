@@ -4,6 +4,7 @@ import Header from "components/Header";
 import Features from "components/Sections/Features";
 import Gallery from "components/Sections/Gallery";
 import Footer from "components/Footer";
+import Stories from "components/Sections/Stories";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Nav />
       </Header>
       <Features />
+      <Stories />
       <Gallery />
       <Footer />
     </>
