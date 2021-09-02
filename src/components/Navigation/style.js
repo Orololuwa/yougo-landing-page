@@ -7,10 +7,10 @@ const Nav = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 2rem 10rem;
-  position: fixed;
+  position: relative;
   width: 100%;
-  top: 0;
-  left: 0;
+  //top: 0;
+  //left: 0;
   z-index: 200;
 
   .logo-wrapper {
