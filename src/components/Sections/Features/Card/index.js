@@ -1,14 +1,10 @@
 import StyledCard from "./style";
-import { IoFastFood } from "react-icons/io5";
-import { blue } from "theme";
 
 const Card = (props) => {
   return (
     <StyledCard>
-      <IoFastFood color={blue[100]} />
-      <p className="header-1">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
+      <img src={props.src} alt="icon" />
+      <h5 className="header-1">Robust Workflow</h5>
       <p className="header-2">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>

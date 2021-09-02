@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { black, blue } from "theme";
+import { black, typeScale } from "theme";
 
 const StyledFeatures = styled.section`
   color: ${black[300]};
@@ -14,17 +14,24 @@ const StyledFeatures = styled.section`
       justify-content: center;
 
       &--header {
-        background-image: linear-gradient(to right, ${blue[200]}, ${blue[100]});
+        background-image: linear-gradient(
+          to right,
+          ${black[200]},
+          ${black[100]}
+        );
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
         letter-spacing: 0.2rem;
-        font-weight: 400;
-        text-transform: uppercase;
+        font-size: ${typeScale.header2};
+        font-weight: 600;
+        text-transform: Capitalize;
       }
 
       &--subheader {
-        width: 30rem;
+        width: 35rem;
+        font-size: ${typeScale.bodyText3};
+        font-weight: 400;
       }
     }
 
@@ -32,10 +39,11 @@ const StyledFeatures = styled.section`
       display: flex;
       gap: 1rem;
       &--text {
-        flex-basis: 50%;
-        display: flex;
-        justify-content: center;
-        flex-flow: wrap;
+        flex-basis: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+        justify-items: center;
+        padding: 2.5rem 0;
       }
       &--image {
         flex-basis: 50%;
@@ -96,7 +104,7 @@ const StyledFeatures = styled.section`
           }
 
           &:hover {
-            outline: 1rem solid ${blue[100]};
+            outline: 1rem solid ${black[100]};
             transform: scale(1.05) translateY(-0.5rem);
             box-shadow: 0 2.5rem 4rem ${black[300]}88;
             z-index: 200;
