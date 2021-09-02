@@ -42,8 +42,8 @@ const StyledCard = styled.div`
     }
   }
 
-  @media only screen and (max-width: 398px) {
-    width: 25rem;
+  @media only screen and (max-width: 600px) {
+    width: 20rem;
   }
 `;
 

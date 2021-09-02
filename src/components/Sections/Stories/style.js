@@ -20,9 +20,17 @@ const StyledStories = styled.section`
     align-items: flex-end;
     padding-right: 1rem;
     .stories-headers {
+      @media only screen and (max-width: 600px) {
+        text-align: center;
+      }
       &--header {
         z-index: 500;
       }
+    }
+
+    @media only screen and (max-width: 600px) {
+      align-items: center;
+      padding-right: 0;
     }
   }
 
@@ -31,6 +39,12 @@ const StyledStories = styled.section`
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+
+    @media only screen and (max-width: 600px) {
+      align-items: center;
+      padding-top: 2.5rem;
+      padding-left: 0;
+    }
   }
 
   @media only screen and (max-width: 600px) {
